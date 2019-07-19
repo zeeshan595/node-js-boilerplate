@@ -1,0 +1,32 @@
+{
+  "name": "typescript-node-js-boilerplate",
+  "version": "1.0.0",
+  "description": "A sample node js application to help you get started quickly",
+  "main": "dist/index.js",
+  "scripts": {
+    "map": "tsc",
+    "build": "npm run map && gulp build",
+    "start": "npm run build && node dist/index.js"
+  },
+  "author": "Zeeshan Abid",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/node": "^12.6.8",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-tslint": "^8.1.4",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "core-js": "^3.1.4",
+    "regenerator-runtime": "^0.13.2"
+  }
+}
